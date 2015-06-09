@@ -23,7 +23,7 @@ class PhoneNumber
   #   followed by a space character, then regex group 2, then a dash, and then
   #   the regex group three pattern.
   #
-  # Stores the result as an instance variable. This is the return of the method.
+  # Returns and stores the result as an instance variable.
   def format_number(number_input)
     @number = number_input.sub(/(\d{3})(\d{3})(\d{4})/,'(\1) \2-\3')
   end
